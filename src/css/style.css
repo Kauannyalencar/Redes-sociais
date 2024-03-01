@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --green: rgb(197, 248, 42);
+    --cor-1: #fff;
+    --cor2:#181818;
+    --Grey: rgb(31, 31, 31);;
+    --offBlack: rgb(20, 20, 20);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--offBlack);
+    color: var(--cor-1);
+}
+
+.container{
+    width: 300px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 13px;
+    background-color: var(--Grey);
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.header .nome{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.header .cidade{
+    font-size: 14px;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.profile-img{
+    width: 95px;
+    border-radius: 50%;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.redes-sociais li {
+    width: 220px;
+    padding: 8px;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.redes-sociais li:last-child{
+    margin-bottom: 20px;
+}
+
+.redes-sociais li:hover{
+    background-color: var(--green);
+}
+
+.redes-sociais li a{
+    text-decoration: none;
+    color: var(--cor-1);
+}
+
+.footer{
+    background-color: var(--offBlack);
+    color: var(--cor-1);
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--cor-1);
+}
+
+.footer a:hover{
+    background-color: var(--green);
+    color: var(--Grey);
+    text-decoration: underline;
+}
