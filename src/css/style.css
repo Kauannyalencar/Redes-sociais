@@ -6,18 +6,18 @@
 :root {
     --green: rgb(197, 248, 42);
     --cor-1: #fff;
-    --cor2:#181818;
-    --Grey: rgb(31, 31, 31);;
+    --cor2: #181818;
+    --Grey: rgb(31, 31, 31);
+    ;
     --offBlack: rgb(20, 20, 20);
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
 }
 
 main {
-    width: 100%;
     height: 95vh;
     display: flex;
     align-items: center;
@@ -26,88 +26,97 @@ main {
     color: var(--cor-1);
 }
 
-.container{
-    width: 300px;
-    height: 80%;
+.container {
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    padding: 13px;
+    padding: 20px;
+    gap: 25px;
     background-color: var(--Grey);
     font-family: 'Inter', sans-serif;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 16px;
+    /* padding: 16px; */
     align-items: center;
     text-align: center;
     font-size: 14px;
 }
 
-.header .nome{
-    font-size: 18px;
+.header .nome {
     font-family: 'Inter', sans-serif;
+    font-style: 45px;
     font-weight: 600;
 }
 
-.header .cidade{
-    font-size: 14px;
+.header .cidade {
+    font-size: 12px;
+    font-weight: 600;
     color: var(--green);
-    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-.profile-img{
+.header > p:last-of-type{
+    padding: 10px;
+}
+
+.profile-img {
     width: 95px;
     border-radius: 50%;
 }
 
-.redes-sociais{
+.redes-sociais {
+    width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
     list-style: none;
 }
 
 .redes-sociais li {
-    width: 220px;
-    padding: 8px;
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
     text-align: center;
     background-color: #333333;
     border-radius: 6px;
     cursor: pointer;
 }
 
+/* 
 .redes-sociais li:last-child{
     margin-bottom: 20px;
-}
+} */
 
-.redes-sociais li:hover{
+.redes-sociais li:hover {
     background-color: var(--green);
 }
 
-.redes-sociais li a{
+.redes-sociais li a {
     text-decoration: none;
     color: var(--cor-1);
 }
 
-.footer{
+.footer {
     background-color: var(--offBlack);
     color: var(--cor-1);
     padding-bottom: 12px;
     text-align: center;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: var(--cor-1);
 }
 
-.footer a:hover{
+.footer a:hover {
     background-color: var(--green);
     color: var(--Grey);
     text-decoration: underline;
